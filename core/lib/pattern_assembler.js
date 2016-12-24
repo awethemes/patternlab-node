@@ -179,6 +179,9 @@ var pattern_assembler = function () {
         if (markdownObject.links) {
           currentPattern.links = markdownObject.links;
         }
+        if (markdownObject.container) {
+          currentPattern.container = markdownObject.container;
+        }
       } else {
         if (patternlab.config.debug) {
           console.log('error processing markdown for ' + currentPattern.patternPartial);
